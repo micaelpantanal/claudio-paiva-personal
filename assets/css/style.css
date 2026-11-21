@@ -549,6 +549,9 @@ strong { color: var(--text); font-weight: 700; }
 .plan-price .cur { font-size: 1.6rem; margin-top: .45rem; color: var(--muted); }
 .plan-price .val { font-size: 4.4rem; font-weight: 600; }
 .plan-price .cents { font-size: 1.6rem; margin-top: .45rem; color: var(--muted); }
+.plan-price .tail { display: flex; flex-direction: column; justify-content: space-between; align-self: stretch; }
+.plan-price .tail .cents { margin-top: .45rem; }
+.plan-price .per { margin-bottom: .45rem; font-family: var(--font-body); font-size: .82rem; font-weight: 700; letter-spacing: .04em; color: var(--muted); line-height: 1; }
 .plan--silver .plan-price .val { background: var(--grad-silver); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .plan--gold .plan-price .val { background: var(--grad-gold); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .plan-price--ask .val { font-size: 2.6rem; padding-block: .62rem .5rem; text-transform: uppercase; letter-spacing: .04em; }

@@ -22,7 +22,7 @@ assets/img/originais/   → arquivos originais (logo em JPG)
 1. **Início**: nome, CREF, chamada para os planos e WhatsApp
 2. **Sobre**: bio, formação e pós-graduação
 3. **Trajetória**: números (anos de experiência, título INBA, faixa preta) e missão
-4. **Planos**: Presencial, Silver Starter (R$ 140) e Gold Premium (R$ 240), cada um abre o WhatsApp com mensagem própria
+4. **Planos**: Presencial, Silver Starter (R$ 140/mês) e Gold Premium (R$ 240/mês), cada um abre o WhatsApp com mensagem própria
 5. **Consultoria online**: itens inclusos e o passo a passo para começar
 6. **Resultados**: antes e depois
 7. **Dúvidas**: perguntas frequentes
@@ -60,7 +60,6 @@ Para usar um domínio próprio (ex.: `claudiopaiva.com.br`), configure em **Sett
 
 ## Pendências
 
-- [ ] Confirmar se os valores dos planos são mensais
 - [ ] Confirmar a autorização dos alunos para as fotos de antes e depois e conseguir as fotos originais (as atuais foram recortadas do cartão)
 - [ ] Adicionar Instagram (se houver)
 - [ ] Informar onde é o atendimento presencial (bairro ou academia)
