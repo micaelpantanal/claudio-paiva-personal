@@ -3,6 +3,8 @@
 Site de apresentação do Claudio Paiva, Personal Trainer e Consultor Esportivo (CREF 071118-G/RJ).
 O cliente conhece o trabalho, vê os planos e, com um toque, cai direto no WhatsApp com a mensagem já escrita.
 
+**Site no ar:** <https://micaelpantanal.github.io/claudio-paiva-personal/>
+
 Site estático (HTML + CSS + JavaScript puro): não precisa de build, banco de dados nem servidor pago.
 
 ## Estrutura
@@ -51,8 +53,8 @@ Depois abra <http://localhost:5500>.
 1. Envie o projeto para um repositório no GitHub.
 2. No repositório: **Settings → Pages → Build and deployment → Source: Deploy from a branch**, branch `main`, pasta `/ (root)`.
 3. Em 1 ou 2 minutos o site fica no ar em `https://SEU-USUARIO.github.io/NOME-DO-REPOSITORIO/`.
-4. No `index.html`, troque `og:image` pelo endereço completo da imagem
-   (ex.: `https://SEU-USUARIO.github.io/NOME-DO-REPOSITORIO/assets/img/og-image.jpg`) para a prévia aparecer quando o link for enviado no WhatsApp.
+4. Se o endereço mudar (outro repositório ou domínio próprio), atualize no `index.html` o `canonical`, `og:url` e `og:image`
+   para a prévia continuar aparecendo quando o link for enviado no WhatsApp.
 
 Para usar um domínio próprio (ex.: `claudiopaiva.com.br`), configure em **Settings → Pages → Custom domain**.
 
