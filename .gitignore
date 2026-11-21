@@ -8,3 +8,7 @@ Desktop.ini
 .idea/
 .claude/
 node_modules/
+
+# Firebase
+.firebase/
+firebase-debug.log
