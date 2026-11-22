@@ -1,0 +1,25 @@
+rules_version = '2';
+
+// MODELO das regras do banco de dados da gestão (Cloud Firestore).
+// O arquivo de verdade é firestore.rules, que fica só no computador (está no .gitignore),
+// para os e-mails não ficarem públicos no GitHub.
+//
+// Para criar: copie este arquivo como firestore.rules, troque os e-mails e publique:
+//   firebase deploy --only firestore:rules
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function autorizado() {
+      return request.auth != null
+        && request.auth.token.email_verified == true
+        && request.auth.token.email.lower() in [
+          'email-do-claudio@gmail.com',
+          'outro-email@gmail.com'
+        ];
+    }
+
+    match /{documento=**} {
+      allow read, write: if autorizado();
+    }
+  }
+}

@@ -12,3 +12,6 @@ node_modules/
 # Firebase
 .firebase/
 firebase-debug.log
+
+# Regras do Firestore com os e-mails autorizados (o repositório é público; o modelo é firestore.rules.exemplo)
+firestore.rules

@@ -3,6 +3,8 @@
     "public": ".",
     "ignore": [
       "firebase.json",
+      "firestore.rules",
+      "firestore.rules.exemplo",
       "**/.*",
       "**/.*/**",
       "**/node_modules/**",
@@ -11,19 +13,32 @@
       "assets/img/originais/**"
     ],
     "cleanUrls": true,
+    "redirects": [
+      { "source": "/gestao", "destination": "/gestao/", "type": 301 }
+    ],
     "headers": [
       {
         "source": "**/*.html",
         "headers": [{ "key": "Cache-Control", "value": "no-cache" }]
       },
       {
-        "source": "**/*.@(css|js)",
+        "source": "/assets/**/*.@(css|js)",
         "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600" }]
       },
       {
         "source": "**/*.@(jpg|jpeg|png|webp|svg|ico)",
         "headers": [{ "key": "Cache-Control", "value": "public, max-age=604800" }]
+      },
+      {
+        "source": "/gestao/**",
+        "headers": [
+          { "key": "Cache-Control", "value": "no-cache" },
+          { "key": "X-Robots-Tag", "value": "noindex, nofollow" }
+        ]
       }
     ]
+  },
+  "firestore": {
+    "rules": "firestore.rules"
   }
 }
