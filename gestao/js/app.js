@@ -538,7 +538,7 @@ function montarShell() {
   $("#app").innerHTML = `
     <div class="shell">
       <aside class="sidebar">
-        <a class="brand" href="#/painel"><img src="../assets/img/logo-mark.png" alt="" width="790" height="435"><span><strong>Claudio Paiva</strong><small>Gestão</small></span></a>
+        <a class="brand" href="#/painel"><img src="/assets/img/logo-mark.png" alt="" width="790" height="435"><span><strong>Claudio Paiva</strong><small>Gestão</small></span></a>
         <nav class="side-nav" aria-label="Principal">${links("side-link")}</nav>
         <div class="side-foot" id="side-foot"></div>
       </aside>
@@ -588,7 +588,7 @@ function render(porDados = false) {
   $("#titulo").textContent = tela.titulo;
   $("#topbar-start").innerHTML = tela.voltar
     ? `<a class="icon-btn" href="${tela.voltar}" aria-label="Voltar">${ic("back")}</a>`
-    : `<img class="topbar-logo" src="../assets/img/logo-mark.png" alt="" width="790" height="435">`;
+    : `<img class="topbar-logo" src="/assets/img/logo-mark.png" alt="" width="790" height="435">`;
   $("#topbar-end").innerHTML = tela.acoes || "";
   view.innerHTML = tela.html;
   tela.depois?.(view);
@@ -618,7 +618,7 @@ function telaLogin(estado = {}) {
   $("#app").innerHTML = `
     <div class="login">
       <div class="login-card">
-        <img class="login-logo" src="../assets/img/logo.png" alt="Claudio Paiva · Personal Trainer" width="936" height="681">
+        <img class="login-logo" src="/assets/img/logo.png" alt="Claudio Paiva · Personal Trainer" width="936" height="681">
         <h1 class="login-title"><span class="chrome">Gestão</span></h1>
         <p class="login-sub">Clientes, planos e mensalidades em um só lugar.</p>
         ${
@@ -634,7 +634,7 @@ function telaLogin(estado = {}) {
 
 function telaFalha(texto) {
   ui.montado = false;
-  $("#app").innerHTML = `<div class="login"><div class="login-card"><img class="login-logo" src="../assets/img/logo.png" alt="" width="936" height="681"><div class="aviso bad">${texto}</div><button type="button" class="btn btn-block" onclick="location.reload()">Tentar de novo</button></div></div>`;
+  $("#app").innerHTML = `<div class="login"><div class="login-card"><img class="login-logo" src="/assets/img/logo.png" alt="" width="936" height="681"><div class="aviso bad">${texto}</div><button type="button" class="btn btn-block" onclick="location.reload()">Tentar de novo</button></div></div>`;
 }
 
 function mensagemErroLogin(e) {

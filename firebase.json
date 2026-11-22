@@ -13,9 +13,6 @@
       "assets/img/originais/**"
     ],
     "cleanUrls": true,
-    "redirects": [
-      { "source": "/gestao", "destination": "/gestao/", "type": 301 }
-    ],
     "headers": [
       {
         "source": "**/*.html",
