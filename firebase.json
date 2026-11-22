@@ -9,6 +9,8 @@
       "**/.*/**",
       "**/node_modules/**",
       "README.md",
+      "AGENTS.md",
+      "CLAUDE.md",
       "firebase-debug.log",
       "assets/img/originais/**"
     ],
